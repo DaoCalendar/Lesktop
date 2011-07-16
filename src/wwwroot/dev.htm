@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>可视化开发工具</title>
+	
+	<link href="Lesktop/CurrentVersion/Themes/Default/skin.css" rel="stylesheet" type="text/css" />
+	
+	<script src="Lesktop/CurrentVersion/Core/Config.ashx" type="text/javascript"></script>
+	
+	<script src="Lesktop/CurrentVersion/Core/Common.js" type="text/javascript"></script>
+	
+	<script src="Lesktop/CurrentVersion/Core/Extent.js" type="text/javascript"></script>
+	
+	<script src="Lesktop/CurrentVersion/Core/UI.js" type="text/javascript"></script>
+	
+	<script language="javascript" type="text/javascript">
+	
+	    var ClientMode = false;
+
+		String.format = function(fmt)
+		{
+			var params = arguments;
+			var pattern = /{{|{[1-9][0-9]*}|\x7B0\x7D/g;
+			return fmt.replace(
+				pattern,
+				function(p)
+				{
+					if (p == "{{") return "{";
+					return params[parseInt(p.substr(1, p.length - 2), 10) + 1]
+				}
+			);
+		}
+		
+	    window.onload = function()
+	    {
+			document.oncontextmenu = function()
+			{
+				return false;
+			}
+			
+			var enableSelTag = {
+				"TEXTAREA":"",
+				"INPUT":""
+			};
+			
+			document.onselectstart=function(evt)
+			{
+				var e = new Lesktop.Event(evt, window);
+				
+				if(e.GetTarget().tagName != undefined && enableSelTag[e.GetTarget().tagName.toUpperCase()] != undefined)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+			
+	        window.onbeforeunload = function()
+	        {
+	            return "关闭窗口后所有数据将丢失";
+	        }
+			
+			Lesktop.InitUI(
+				function()
+				{
+					Lesktop.LoadModules(
+						function()
+						{
+							Lesktop.GetModule("Developer.js").NewInstance();
+						},
+						function(ex)
+						{
+							Lesktop.Utility.ShowError(ex);
+						},
+						["Developer.js"]
+					);
+				}
+			);
+	    }
+	</script>
+
+</head>
+<body>
+</body>
+</html>

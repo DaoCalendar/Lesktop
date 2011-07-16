@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Web Developer Express 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wwwroot", "wwwroot\", "{71DCFEAA-CA75-4602-A7B0-ACF6CFED024E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		ProjectReferences = "{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}|Lesktop.dll;{44B8D277-1048-4920-A887-ADB46FC3A0D1}|Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/wwwroot"
+		Debug.AspNetCompiler.PhysicalPath = "wwwroot\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\wwwroot\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/wwwroot"
+		Release.AspNetCompiler.PhysicalPath = "wwwroot\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\wwwroot\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11527"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesktop", "Lesktop\Lesktop.csproj", "{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{44B8D277-1048-4920-A887-ADB46FC3A0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{4123FD45-3A87-4077-8C4F-F3247E6F1492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsHtmHstInterop", "MsHtmHstInterop\MsHtmHstInterop.csproj", "{CAA21575-73FD-46E4-824A-926BB0410B3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71DCFEAA-CA75-4602-A7B0-ACF6CFED024E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DCFEAA-CA75-4602-A7B0-ACF6CFED024E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DCFEAA-CA75-4602-A7B0-ACF6CFED024E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DCFEAA-CA75-4602-A7B0-ACF6CFED024E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CFBCF8-A85B-496B-A5FB-8D42C2B7D384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B8D277-1048-4920-A887-ADB46FC3A0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B8D277-1048-4920-A887-ADB46FC3A0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B8D277-1048-4920-A887-ADB46FC3A0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B8D277-1048-4920-A887-ADB46FC3A0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4123FD45-3A87-4077-8C4F-F3247E6F1492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4123FD45-3A87-4077-8C4F-F3247E6F1492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4123FD45-3A87-4077-8C4F-F3247E6F1492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4123FD45-3A87-4077-8C4F-F3247E6F1492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA21575-73FD-46E4-824A-926BB0410B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA21575-73FD-46E4-824A-926BB0410B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA21575-73FD-46E4-824A-926BB0410B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA21575-73FD-46E4-824A-926BB0410B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
